@@ -14,7 +14,7 @@ class TrainData:
 
 class DataReader:
     def __init__(self, target_number: int = 0) -> None:
-        self.file = 'train_data.json'
+        self.file = 'data.json'
         if 0 <= target_number <= 9:
             self.target_number = str(target_number)
         else:

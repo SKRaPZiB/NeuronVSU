@@ -1,4 +1,4 @@
-from reader import DataReader
+from load import DataReader
 from perceptron import Perceptron
 
 
@@ -8,7 +8,7 @@ H = 0.7
 
 
 def main():
-    train_data = DataReader(4).get_train_data()
+    train_data = DataReader(9).get_train_data()
     perceptron = Perceptron(size=len(train_data[0].data), h=H)
 
     perceptron.train(train_data=train_data, nu=NU)
